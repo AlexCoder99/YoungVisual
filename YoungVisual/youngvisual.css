@@ -1,0 +1,499 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Times New Roman", Times, serif;
+    
+}
+
+
+
+/* Generale */
+
+body{
+    background-image: url(young/light.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header {
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(#ece6e6 36%,#bdb7b7);
+    padding: 6px;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    z-index: 2;
+    top:0;
+    left: 0;
+    border-bottom: black solid 1px;
+    box-shadow: 0px 6px 6px 2px #6b64646b;
+}
+ 
+header #logo {
+    width: 100px; 
+    margin-left: 32px;
+} 
+
+
+.carousel-item{
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img{
+    margin-top: 4%;  
+}
+
+
+div.row.nav{
+    display: flex;
+    background-image: linear-gradient(to bottom right, #ece6e6 30%,#464040);
+    padding: 3px;
+    justify-content: center;
+    
+}
+
+div.row .thumb{
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 100%;
+    
+}
+
+#menuham{
+    width: 40px;
+    height: 40px;
+}
+
+
+.nav.navbar-nav {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+button.navbar-toggler{
+    padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Pagina Home */
+
+.jumbotron{
+    text-shadow: 6px 6px 7px #00000073;
+}
+
+div.incipit {
+    background:  rgba(0, 0, 0);
+    padding: 30px;
+    font-size: 25;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+div.incipit:hover{
+    background:  rgba(0, 0, 0, 0.50);
+}
+
+
+div.footer{
+    padding:35px 20px 15px 20px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+span {
+    display: inline;
+    line-height: 10px;
+}
+
+
+
+#globe {
+    width: 100%;  
+    border-radius: 50%;
+    
+}
+
+
+div #chi{
+    float: left;
+}
+
+
+#chi {
+    
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    
+}
+
+
+div #services{
+    float: right;
+}
+
+
+#services {
+    
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    
+}
+
+#agency{
+    font-size: 27;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Pagina servizi */
+
+div.container-fluid.serv {
+   
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+}
+
+
+
+div.container.content{
+    margin-bottom:32px;  
+}
+
+.col-md-6.area {
+    padding: 30px 30px;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+
+
+.img-fluid.cards{
+    border-radius:3px;
+    
+}
+
+.card-text.main {
+    color: black;
+    font-size: 36px;
+    background-color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 6px 4px 5px #00000042;
+
+}
+
+.card-text.sub {
+    color: black;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 2px #5f595942;
+}
+
+
+
+
+
+
+
+
+/* Pagina contatti */
+
+.container.contacts{
+
+    padding: 40px 55px;
+    background-color: #ffffff6b;
+    margin: 50px auto;
+}
+
+
+.socialbox{
+    text-align:center;
+}
+
+button.btn.logo{
+    padding:0;
+   
+}
+
+.social-media {
+    width: 150px;
+}
+
+
+.discover{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0;
+    text-align:center;
+}
+
+
+
+
+
+
+
+/* Pagina Chi Siamo */
+
+div.conclusion {
+    background:  rgba(0, 0, 0);
+    padding: 50px;
+    font-size: 25;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+div.conclusion:hover{
+    background:  rgba(0, 0, 0, 0.50);
+}
+
+#unipd{
+    width: 190px;
+    padding: 20px;
+    padding-top: 0;
+    
+}
+
+span.bold{
+    font-size: 31px;
+    font-weight:bold;
+}
+
+div.container.photos{
+    padding: 40px;
+    padding-bottom: 50px;
+    
+}
+
+.team9{
+    border-radius: 20px;
+}
+
+.team{
+    font-size: 250%;
+    color: rgb(114, 32, 32);
+    text-align: center;
+    font-weight: bold;
+    text-shadow:  1px 3px 4px #927070;
+}
+
+.frame{
+  
+  border: 8px double rgb(150, 117, 19);
+  border-radius: 20px;
+  background: #d6d5ce;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+
+
+
+
+
+
+
+/* media & stuff */
+
+@media screen and ( max-width: 1130px){
+    .card-text.main{
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .card-text.sub{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    header #logo {
+        width: 90px; 
+        } 
+
+    #menuham{
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-item img{
+        margin-top: 4%;  
+    }
+        
+    div.row .thumb{
+        font-size: 20px;
+        
+    }
+    
+}
+
+    
+
+
+@media screen and ( max-width: 952px){
+    .card-text.main{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .card-text.sub{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .carousel-item img{
+        margin-top: 5%;  
+    }
+
+    div.row .thumb{
+        font-size: 18px;
+        
+    }
+
+}
+
+
+@media screen and ( max-width: 830px){
+    .card-text.main{
+        font-size: 21px;
+        padding: 5px;
+    }
+
+    .card-text.sub{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    header #logo {
+        width: 80px; 
+        } 
+        
+    #menuham{
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-item img{
+        margin-top: 6%;  
+    }
+
+    div.row .thumb{
+        font-size: 17px;
+    }
+  
+   
+}
+
+@media screen and (max-width: 768px){
+      
+    #agency{
+        display: block;
+        line-height: 35px;
+    }
+
+
+}
+
+
+@media screen and ( max-width: 672px){
+    .card-text.main{
+        font-size: 17px;
+        padding: 5px;
+        margin-bottom: 6px;
+    }
+
+    .card-text.sub{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .carousel-item img{
+        margin-top: 7%;  
+    }
+
+    .team{
+        font-size: 200%;
+    }
+
+  
+}
+
+@media screen and ( max-width: 554px){
+    .card-text.main{
+        font-size: 15px;
+        padding: 3px;
+        margin-bottom:5px;
+    }
+
+    .card-text.sub{
+        font-size: 11px;
+        padding: 3px;
+    }
+
+    header #logo {
+        width: 73px; 
+        } 
+        
+    #menuham{
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-item img{
+        margin-top: 9%;  
+    }
+
+    .team{
+        font-size: 150%;
+    }
+
+
+}
+
+@media screen and ( max-width: 500px){
+
+    .card-text.main{
+        font-size: 12px;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    .card-text.sub{
+        font-size: 9px;
+        padding: 2px;
+    }
+
+
+}
