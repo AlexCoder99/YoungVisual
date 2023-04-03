@@ -9,9 +9,9 @@
 
 /* Generale */
 
-body{
+body{ 
     background-image: url(young/light.jpg);
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
@@ -23,12 +23,13 @@ header {
     padding: 6px;
     position: fixed;
     width: 100%;
-    max-width: 100%;
-    z-index: 2;
-    top:0;
+    z-index: 99;
+    top:-80px;
     left: 0;
     border-bottom: black solid 1px;
     box-shadow: 0px 6px 6px 2px #6b64646b;
+    transition: top 0.4s;
+
 }
  
 header #logo {
@@ -42,9 +43,6 @@ header #logo {
     text-align: center;
 }
 
-.carousel-item img{
-    margin-top: 4%;  
-}
 
 
 
@@ -85,13 +83,6 @@ button.navbar-toggler{
 
 
 
-
-
-
-
-
-
-
 /* Pagina Home */
 
 .jumbotron{
@@ -101,7 +92,7 @@ button.navbar-toggler{
 div.incipit {
     background:  rgba(0, 0, 0);
     padding: 30px;
-    font-size: 25;
+    font-size: 25px;
     border-radius: 20px;
     margin-bottom: 40px;
     color: white;
@@ -122,6 +113,7 @@ div.footer{
 span {
     display: inline;
     line-height: 10px;
+    font-size: 50px;
 }
 
 
@@ -133,27 +125,16 @@ span {
 }
 
 
-div #chi{
-    float: left;
-}
-
-
 #chi {
-    
+    float: left;
     padding: 10px;
     border-radius: 20px;
     font-size: 18px;
     
 }
 
-
-div #services{
-    float: right;
-}
-
-
 #services {
-    
+    float: right;
     padding: 10px;
     border-radius: 20px;
     font-size: 18px;
@@ -166,19 +147,23 @@ div #services{
 }
 
 
-
-
-
-
 /* Pagina servizi */
 
-div.container-fluid.serv {
-   
-    margin-top: 32px;
-    margin-bottom: 32px;
-    
+
+div.container.serv{
+    margin: 0 auto;
+    padding: 30px;
 }
 
+div.container.serv img{
+    opacity: 0.3;
+}
+
+.card-title, .card-text.main, .card-text.sub{
+    text-align: center;
+    text-shadow: 6px 4px 4px #00000042;
+
+}
 
 
 div.container.content{
@@ -199,29 +184,6 @@ div.container.content{
     border-radius:3px;
     
 }
-
-.card-text.main {
-    color: black;
-    font-size: 36px;
-    background-color: rgba(255, 255, 255, 0.637);
-    text-align: center;
-    padding: 20px;
-    text-shadow: 6px 4px 5px #00000042;
-
-}
-
-.card-text.sub {
-    color: black;
-    font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.637);
-    text-align: center;
-    padding: 20px;
-    text-shadow: 2px 2px 2px #5f595942;
-}
-
-
-
-
 
 
 
@@ -256,7 +218,6 @@ button.btn.logo{
     margin-bottom: 0;
     text-align:center;
 }
-
 
 
 
@@ -299,9 +260,7 @@ div.container.photos{
     
 }
 
-.team9{
-    border-radius: 20px;
-}
+
 
 .team{
     font-size: 250%;
@@ -315,6 +274,7 @@ div.container.photos{
   
   border: 8px double rgb(150, 117, 19);
   border-radius: 20px;
+  border-radius: 20px;
   background: #d6d5ce;
   margin: auto;
   padding: 15px 10px;
@@ -324,21 +284,9 @@ div.container.photos{
 
 
 
-
-
-
-/* media & stuff */
+/* responsive media */
 
 @media screen and ( max-width: 1130px){
-    .card-text.main{
-        font-size: 30px;
-        padding: 15px;
-    }
-
-    .card-text.sub{
-        font-size: 20px;
-        padding: 15px;
-    }
 
     header #logo {
         width: 90px; 
@@ -349,9 +297,6 @@ div.container.photos{
         height: 40px;
     }
 
-    .carousel-item img{
-        margin-top: 4%;  
-    }
         
     div.row .thumb{
         font-size: 20px;
@@ -360,23 +305,8 @@ div.container.photos{
     
 }
 
-    
-
 
 @media screen and ( max-width: 952px){
-    .card-text.main{
-        font-size: 25px;
-        padding: 10px;
-    }
-
-    .card-text.sub{
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .carousel-item img{
-        margin-top: 5%;  
-    }
 
     div.row .thumb{
         font-size: 18px;
@@ -387,15 +317,6 @@ div.container.photos{
 
 
 @media screen and ( max-width: 830px){
-    .card-text.main{
-        font-size: 21px;
-        padding: 5px;
-    }
-
-    .card-text.sub{
-        font-size: 15px;
-        padding: 5px;
-    }
 
     header #logo {
         width: 80px; 
@@ -406,9 +327,6 @@ div.container.photos{
         height: 35px;
     }
 
-    .carousel-item img{
-        margin-top: 6%;  
-    }
 
     div.row .thumb{
         font-size: 17px;
@@ -429,20 +347,6 @@ div.container.photos{
 
 
 @media screen and ( max-width: 672px){
-    .card-text.main{
-        font-size: 17px;
-        padding: 5px;
-        margin-bottom: 6px;
-    }
-
-    .card-text.sub{
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .carousel-item img{
-        margin-top: 7%;  
-    }
 
     .team{
         font-size: 200%;
@@ -451,17 +355,8 @@ div.container.photos{
   
 }
 
-@media screen and ( max-width: 554px){
-    .card-text.main{
-        font-size: 15px;
-        padding: 3px;
-        margin-bottom:5px;
-    }
+@media screen and ( max-width: 500px){
 
-    .card-text.sub{
-        font-size: 11px;
-        padding: 3px;
-    }
 
     header #logo {
         width: 73px; 
@@ -472,10 +367,6 @@ div.container.photos{
         height: 30px;
     }
 
-    .carousel-item img{
-        margin-top: 9%;  
-    }
-
     .team{
         font-size: 150%;
     }
@@ -483,18 +374,3 @@ div.container.photos{
 
 }
 
-@media screen and ( max-width: 500px){
-
-    .card-text.main{
-        font-size: 12px;
-        padding: 2px;
-        margin-bottom: 3px;
-    }
-
-    .card-text.sub{
-        font-size: 9px;
-        padding: 2px;
-    }
-
-
-}
